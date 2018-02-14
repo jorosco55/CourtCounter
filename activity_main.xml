@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,7 +25,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="Team A" />
+                android:text="Team A"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"/>
 
             <TextView
                 android:id="@+id/team_a_score"
@@ -32,21 +38,29 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="0" />
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif"
+                android:paddingBottom="24dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:onClick="addThreeForTeamA"
-                android:text="+3 Points" />
+                android:text="+3 Points"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingBottom="8dp"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:onClick="addTwoForTeamA"
-                android:text="+2 Points" />
+                android:text="+2 Points"
+                android:paddingBottom="8dp"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -72,7 +86,10 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="Team B" />
+                android:text="Team B"
+                android:fontFamily="sans-serif"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
 
             <TextView
                 android:id="@+id/team_b_score"
@@ -80,7 +97,10 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="4dp"
-                android:text="0" />
+                android:text="0"
+                android:textSize="56sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif"/>
 
             <Button
                 android:layout_width="match_parent"
@@ -115,6 +135,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="Reset"
-        android:onClick="restScores"/>
+        android:onClick="restScores"
+        android:layout_marginBottom="32dp"/>
 
 </RelativeLayout>
